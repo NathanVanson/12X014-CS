@@ -134,7 +134,7 @@ def substitutions(res):
     return s_result
         
 # ----- Step 2 : Cipher Function ----- #
-# En suivant l'exemple qui est : Cipher(R_i, SubKey_i) = P(S(E(R_i) ⊕ SubKey_i))
+# Following the example that is : Cipher(R_i, SubKey_i) = P(S(E(R_i) ⊕ SubKey_i))
 
 def cipherFunction(R, SubKey):
     """Cipher function - DES
@@ -146,13 +146,13 @@ def cipherFunction(R, SubKey):
     Returns:
         _list[int]_: Integer table
     """
-    # Extention de Ri avec la table "E" du fichier DES_tables.py
+    # Ri extension with the table "E" of the file DES_tables.py
     Ri_etendu = permutation(R, E) 
-    # XOR entre Ri et la sous-clé de l'étape.
+    # XOR between Ri and the step subkey
     xor_Ri = xor(Ri_etendu, SubKey)
-    # Découpage du résultat en utilisant 1 des 8 S-boxes
+    # Cutting the result using 1 of the 8 S-boxes
     s_res = substitutions(xor_Ri)
-    # On applique aux 32 bits obtenus une permutation P.
+    # We apply to the 32 bits obtained a permutation P
     p_res = permutation(s_res, P)
     return p_res    
 
