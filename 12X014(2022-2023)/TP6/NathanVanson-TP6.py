@@ -1,6 +1,7 @@
 ### Nathan Vanson UNIGE ###
 
 ### DES implementation - Data Encryption Standard (Encryption and Decryption) ###
+### License : GNU Public License (GPL)
 ### Course : Cryptography and Security (TP6)
 
 # ========== LIBRAIRES ========== #
