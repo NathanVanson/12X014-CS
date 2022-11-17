@@ -1,6 +1,7 @@
 ### Nathan Vanson UNIGE ###
 
 ### TP4 : Version Hidden Blue - Steganography ###
+### License : GNU Public License (GPL)
 ### Course : Cryptography and Security (TP4)
 
 # ========== LIBRAIRIES ========== #
