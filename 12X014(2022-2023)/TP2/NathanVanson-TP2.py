@@ -1,6 +1,7 @@
 ### Nathan Vanson UNIGE ###
 
 ### Vigenère encryption from a given ciphertext ###
+### License : GNU Public License (GPL)
 ### Course : Cryptography and Security (TP2)
 
 # ========== LIBRAIRIES ========== #
