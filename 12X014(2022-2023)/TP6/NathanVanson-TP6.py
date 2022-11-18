@@ -235,11 +235,21 @@ def decryption(ciphertext, key):
 # ========== MAIN ========== #
 
 if __name__ == "__main__" :
+    print("===========================================================================================================")
+    print("================================== DES ENCRYPTION / DECRYPTION. ===========================================")
+    print("===========================================================================================================")
+    print("\n")
     # We perform a test with the example given in the statement :
     plaintext = 0x0011223344556677
     key = 0x0123456789ABCDEF
     
     ciphertext_DES = encryption(plaintext, key)
     
-    print("Ciphertext correspondant:" ,ciphertext_DES)
-    print("Decryption correspondante à {} : {}".format(hex(0xcadb6782ee2b4823), decryption(0xcadb6782ee2b4823, key)))
+    print("Corresponding Ciphertext :\n" ,ciphertext_DES)
+    print("\n")
+    print("Decryption corresponding to {} : {}".format(hex(0xcadb6782ee2b4823), decryption(0xcadb6782ee2b4823, key)))
+    print("\n")
+    
+    print("===========================================================================================================")
+    print("============================================ END ==========================================================")
+    print("===========================================================================================================")
